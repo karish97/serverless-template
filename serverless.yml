@@ -1,0 +1,23 @@
+service: auction-service
+
+plugins:
+  - serverless-bundle
+  - serverless-pseudo-parameters
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  memorySize: 256
+  stage: ${opt:stage, 'dev'}
+  region: ap-south-1
+  
+functions:
+  hello:
+    handler: src/handlers/hello.handler
+    events:
+      - http:
+          method: GET
+          path: /hello
+
+# The serverless-bundle reduces the deployment packages size by creating small bundles using webpacks and the serverless-pseudo-parameters helps to access AWS environment information. Both plugins help to streamline the development and deployment process for serverless applications.
+# The stage defines the stage of deployment of the application. The ${opt:stage} is used as referenece variable in yaml.
