@@ -1,4 +1,4 @@
-service: auction-service
+service: serverless-template
 
 plugins:
   - serverless-bundle

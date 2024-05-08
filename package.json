@@ -1,9 +1,9 @@
 {
-  "name": "auction-service",
+  "name": "serverless-template",
   "version": "1.0.0",
-  "description": "Serverless Framework Project - Auction Service",
+  "description": "template for serverless framework",
   "author": "Karishma Kesari",
-  "license": "MIT",
+  "license": "",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^9.1.3",
