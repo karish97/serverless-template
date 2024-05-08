@@ -1,1 +1,1 @@
-It is the auction-service of our serverless architecture project.
+It is the serverless template.
